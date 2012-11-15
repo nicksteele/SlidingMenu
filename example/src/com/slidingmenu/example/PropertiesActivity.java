@@ -1,7 +1,6 @@
 package com.slidingmenu.example;
 
 import android.os.Bundle;
-import android.util.Log;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.RadioGroup;
