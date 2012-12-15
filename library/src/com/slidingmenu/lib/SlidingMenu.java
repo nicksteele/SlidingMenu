@@ -1,7 +1,5 @@
 package com.slidingmenu.lib;
 
-import java.lang.reflect.Method;
-
 import android.app.Activity;
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -24,6 +22,8 @@ import android.view.WindowManager;
 import android.widget.RelativeLayout;
 
 import com.slidingmenu.lib.CustomViewAbove.OnPageChangeListener;
+
+import java.lang.reflect.Method;
 
 public class SlidingMenu extends RelativeLayout {
 
@@ -387,7 +387,8 @@ public class SlidingMenu extends RelativeLayout {
 	 * Toggle the SlidingMenu. If it is open, it will be closed, and vice versa.
 	 */
 	public void toggle() {
-		toggle(true);
+//		toggle(true);
+	    mOpenListener.onOpen();
 	}
 	
 	/**
